@@ -176,7 +176,8 @@ This section briefly explains the main modules in the design. See the **src/** f
 
 ## **6. Short Video Demonstration**
 
-![Demo video](https://github.com/user-attachments/assets/a6b97bb8-f646-43a0-a99e-8ffe62ed73e2)
+[![Demo Video](path/to/thumbnail.png)](https://github.com/user-attachments/assets/51817db1-c7d6-4cea-a7fe-6f03eacc206a)
+
 
 
 ***
@@ -190,15 +191,18 @@ This section briefly explains the main modules in the design. See the **src/** f
 
 
     git clone https://github.com/Skandakm29/Real-Time-Sensor-Data-Acquisition-and-Transmission-System.git
-    cd Real-Time-Sensor-Data-Acquisition-and-Transmission-System
-    make build
+    cd "Real-Time-Sensor-Data-Acquisition-and-Transmission-System"
+```
+clones a GitHub repository for a real-time sensor data system and then enters its directory
+```bash
+   make build
 ```
 This runs Yosys, nextpnr, and icepack (or your FPGA toolchain) to produce the final bitstream (e.g., `top.bin`).
 
 
 ### **7.2. Flashing the FPGA**
 
-```bash
+```tcl
 
     sudo make flash
 ````
